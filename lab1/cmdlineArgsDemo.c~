@@ -1,0 +1,12 @@
+r, "The command line arguments are:\n");
+        for(i = 1; i < argc; i++) {
+            fprintf(stderr, "   argv[%d] (as string): %s\n"
+                            "              (as int): %d\n"
+                            "       (as int in hex): %X\n\n",
+                            i, argv[i], atoi(argv[i]), atoi(argv[i]));
+        }
+    } else {
+        fprintf(stderr, "There were no command line arguments.\n");
+    }
+    exit(0);
+}

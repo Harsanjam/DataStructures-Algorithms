@@ -1,0 +1,14 @@
+
+void mySort2(int argv[], unsigned int argc)
+{
+  int i, j, a;
+for (i = 0; i < argc; ++i){
+   for (j = i + 1; j < argc; ++j){
+      if (argv[i] > argv[j]){
+         a = argv[i];
+         argv[i] = argv[j];
+         argv[j] = a;
+      }
+   }
+}
+}

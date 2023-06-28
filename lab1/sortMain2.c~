@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(int argc, char * argv[])
+{
+  mySort2(argv[], argc);
+    int i;
+    fprintf(stderr, "I was invoked with the command: %s\n", argv[0]);
+    if (argc > 1) {
+        fprintf(stderr, "The command line arguments are:\n");
+        for(i = 1; i < argc; i++) {
+	  fprintf (stderr,argv[i],atoi(argv[i]), atoi(argv[i]));
+        }
+
+	/* Print sorted array to stdout */
+    for(i = 0; i < argc; i++) {
+        printf("%d\n", argv[i]);
+    }
+    }
+		
+   }   
+    
+    else {
+        fprintf(stderr, "There were no command line arguments.\n");
+    }
+    exit(0);
+}

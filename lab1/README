@@ -1,0 +1,6 @@
+Part 1: code compiles and displays correct results without any error
+
+Part 2: code compiles and displays correct results without any error
+
+Question/Answer:-
+If we are only given the first and last indices of the array, then our sorting function will work by finding the middle point between the two indicies and sorting each halves independently by once again finding the middle point till it reaches a final integer. this strategy of halving the portions of array can be used to rank each integer value in lowest to highest order by comparing it to the previous index value.
