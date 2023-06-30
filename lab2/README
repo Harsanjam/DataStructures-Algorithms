@@ -1,0 +1,62 @@
+Part 1:
+
+Answer 1:
+the first recursive call invoked would be towers(4,2,1) because rather than n=5, it would execute n-1 and n would become 4. Since the block is moving from tower 2 to tower 3, the variable "from" would stay the same which is 2. 
+
+Answer 2:
+5 recursive calls will be made.
+
+Answer 3:
+
+2 3
+2 1
+3 1
+2 3
+1 2
+1 3
+2 3
+2 1
+3 1
+3 2
+1 2
+3 1
+2 3
+2 1
+3 1
+2 3
+1 2
+1 3
+2 3
+1 2
+3 1
+3 2
+1 2
+1 3
+2 3
+2 1
+3 1
+2 3
+1 2
+1 3
+2 3
+
+
+Answer 4:
+towers(3,2,3)
+
+Answer 5:
+we can use the formuala of 2^(n-1) to find the minimum number of moves for tower of hanoi. therefore 8 disks will require a minimum of 255 moves.
+
+
+Part 2:
+The code for this part was completed and it ran without any errors/bugs.
+
+The code consisted of 3 main if statements which ran the follwing way:
+
+1. no arguments:- If no arguments are given, the problem is solved for moving 3 disks from Tower 1 to Tower 2.
+
+2. 1 argument only:- If only one argument is given, the problem is solved for moving numberDisks disks from Tower 1 to Tower 2.
+
+3. 3 arguments:- If all three arguments are given, the problem is solved for moving numberDisks disks from Tower fromID to Tower toID. The tower IDs must be either '1', '2' or '3' and the two IDs must be different.
+
+else if statements were used to make sure that "from" and "dest" variables were not the same as well as only values between 1,2,3 is typed for towers.

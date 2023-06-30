@@ -1,0 +1,40 @@
+//The codes for insertionSort and mergeSort compile without any errors and give the desired outputs. The lab is completed.
+
+1a) Summary for insertionSort:
+
+Code for InsertionSort works by starting at the second element of the array and comparing it with the previous index. Compare the current element to its predecessor. If the key element is smaller than its predecessor, then the two elements will swap position. repeat the process until the current value is not smaller than the previous index. this wuld mean that the array is fully sorted.
+
+1b)Summary for mergeSort:
+
+This code works by dividing the array into 2 sections, and then sorts each half seperately and puts them back together. The "mySort" is a recursive function that is used for breaking down the 2 halves until we reach 1 element. We would then use the "merge" function to sort these elements one-by-one and combine them together for each level until we reach our final sorted array. A detailed breakdown of the code is given in the file "mergeSort.c" with comments to explain each step of the program.
+
+
+2a)Insertion Sort Analysis:
+
+Best Case :- O(n) "when the array is already sorted" example: 1 2 3 4 5
+		(n-1) for comparisons
+		0 swaps 
+		(2n-2) for copies
+
+Average Case :- O(n^2) "best case minus worst case divided by 2"
+		(n-1+n(n-1)/2)/2 comparisons 
+		(n(n-1)/2) swaps
+ 		(2n-2) copies
+
+Worst Case :- O(n^2) "when array is reversely sorted" example: 5 4 3 2 1
+		(n(n-1)/2) comparisons 
+		(n(n-1)/2) swaps 
+	        (2n-2) copies
+
+
+2b)Merge Sort Analysis:
+
+Best Case :- omega(nlogn) "happen when we have only 1 element in the array. everysthing would ne 0 for swaps, copies and comparisons"
+
+Worst Case - O(nlogn) "this would happen when we have the maximum number of comparisons"
+
+Average Case :- theta(nlogn)
+		number of compares for n element is:- (nlogn)/2
+		number of copies for n element is: 2nlogn
+
+
