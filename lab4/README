@@ -1,0 +1,52 @@
+Lab4 by Harsanjam Saini (Id: 501055402) completed on March 9, 2022
+
+My custom state machine was:
+A F E
+B C F
+C E G
+D G H
+E B A
+F D F
+G A H
+H C B
+ 
+The starting state is A 
+
+The stateDiagram is included as a jpg file in the folder
+
+Instructions for user to test code:
+
+1. To delete a state use the command 'd' and then followed by a state name with a space between them. (example: d H)
+
+2. to print the entire state pattern, simple type 'p'. (it is case sensitive)
+
+3. to exit the program, simply type 'q' to quit. (it is case sensitive)
+
+4.Enter a command (0 or 1) to switch state.
+
+5. to change the path of the current state first type 'c' then type if you want to switch 0/1 nd finally indicate the name of the new state. Please note that it works by have a blank space between the 3 commands. (Example: c 0 G) 
+
+Notes:
+
+In my code the no command, one/zero command, print command and change command fully work.
+The delete command can be invoked by typing the letter 'd' followed by the name of the state to delete.
+The garbage command was not completed.
+
+however I do have an idea on how it could be implemented:
+
+--> Create an array of states that are in pointer form.
+
+-->	Then create a global static character array filled with dummy variable that can be used as a control to track garbage and non-garbage letters.
+
+--> This array would be filled by recursively going through all the states and if they are reachable, their char name replaces the dummy var in the control array.  
+
+--> If they are garbage then change the pointer array names to 'z'.
+
+--> To check for garbage, simply iterate through the control array and if it isn't 'z' then it is not garbage.
+
+--> Have a global static character array filled with dummy vars that are used to track deleted states.
+
+--> It fills with garbage names when garbage is called.
+
+--> If the pointer array has name 'z' it is replaced with ' ' so it can't be seen.
+
