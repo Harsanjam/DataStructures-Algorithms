@@ -1,0 +1,44 @@
+Summarize your lab:
+
+  Part 1:
+     Works  Yes 
+     
+  Part 2:
+     Works  Yes
+     
+  Part 3:
+     Works  No, most likely an issue with the part3Main. The logic and reasoning behind Hashcode is correct.
+     
+***ANSWERS TO QUESTIONS***
+ Question 1:
+     Which hash table collision resolution method did you use
+     (eg. chaining or open addressing)? Explain your choice
+     briefly (less than 25 words).
+ YOUR ANSWER:
+ 	I used open addressing as discussed in our lecture, all elements are stored in the hash table itself
+ 
+ 
+
+ Question 2:
+       Which hash function (division or multiplication) did you use?
+       How did you convert a string into a number?
+ YOUR ANSWER:
+		I used division and just made it the sum of all ASCII in the string modded by the total size of the hash table
+ 
+ 
+ 
+ Question 3:
+       Another legal XML tag not used in this lab is the
+       stand-alone tag.  This kind of tag
+       combines both a start-tag and end-tag in one.
+       It is identified with a '/' (slash) preceding the
+       final >.  (For example, the <foo/>
+       is a stand-alone tag that is self balancing.
+       
+       Describe briefly how
+       you would modify Part 3 to allow this kind of tag.
+       
+ YOUR ANSWER:
+
+Simply add another conditional if statement that checks for '/' after the alphabet. We would have a stand-alone tag when the if statement is true and will be added to the hash table for printing.
+  
